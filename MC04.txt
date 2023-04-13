@@ -1,0 +1,62 @@
+c:\AGH\S6\PSI\Projekt>mc04.py
+Found 3355 files belonging to 4 classes.
+Using 2684 files for training.
+Found 3355 files belonging to 4 classes.
+Using 671 files for validation.
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ rescaling (Rescaling)       (None, 256, 256, 3)       0
+
+ conv2d (Conv2D)             (None, 256, 256, 16)      448
+
+ max_pooling2d (MaxPooling2D  (None, 128, 128, 16)     0
+ )
+
+ conv2d_1 (Conv2D)           (None, 128, 128, 32)      4640
+
+ max_pooling2d_1 (MaxPooling  (None, 64, 64, 32)       0
+ 2D)
+
+ conv2d_2 (Conv2D)           (None, 64, 64, 64)        18496
+
+ max_pooling2d_2 (MaxPooling  (None, 32, 32, 64)       0
+ 2D)
+
+ conv2d_3 (Conv2D)           (None, 32, 32, 128)       73856
+
+ max_pooling2d_3 (MaxPooling  (None, 16, 16, 128)      0
+ 2D)
+
+ flatten (Flatten)           (None, 32768)             0
+
+ dense (Dense)               (None, 256)               8388864
+
+ dense_1 (Dense)             (None, 4)                 1028
+
+=================================================================
+Total params: 8,487,332
+Trainable params: 8,487,332
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/10
+84/84 [==============================] - 125s 1s/step - loss: 1.3201 - accuracy: 0.4426 - val_loss: 1.2436 - val_accuracy: 0.4635
+Epoch 2/10
+84/84 [==============================] - 123s 1s/step - loss: 1.1504 - accuracy: 0.5048 - val_loss: 1.1398 - val_accuracy: 0.5022
+Epoch 3/10
+84/84 [==============================] - 122s 1s/step - loss: 1.0868 - accuracy: 0.5339 - val_loss: 1.1360 - val_accuracy: 0.5082
+Epoch 4/10
+84/84 [==============================] - 122s 1s/step - loss: 1.0630 - accuracy: 0.5384 - val_loss: 1.1942 - val_accuracy: 0.4814
+Epoch 5/10
+84/84 [==============================] - 122s 1s/step - loss: 1.0184 - accuracy: 0.5689 - val_loss: 1.1152 - val_accuracy: 0.5246
+Epoch 6/10
+84/84 [==============================] - 121s 1s/step - loss: 0.9689 - accuracy: 0.5775 - val_loss: 1.1341 - val_accuracy: 0.5410
+Epoch 7/10
+84/84 [==============================] - 121s 1s/step - loss: 0.9536 - accuracy: 0.5943 - val_loss: 1.2398 - val_accuracy: 0.5142
+Epoch 8/10
+84/84 [==============================] - 121s 1s/step - loss: 0.8695 - accuracy: 0.6382 - val_loss: 1.2766 - val_accuracy: 0.5142
+Epoch 9/10
+84/84 [==============================] - 123s 1s/step - loss: 0.7980 - accuracy: 0.6755 - val_loss: 1.1984 - val_accuracy: 0.5142
+Epoch 10/10
+84/84 [==============================] - 122s 1s/step - loss: 0.6650 - accuracy: 0.7191 - val_loss: 1.3740 - val_accuracy: 0.4799

@@ -1,0 +1,52 @@
+c:\AGH\S6\PSI\Projekt>mc02_fix.py
+Found 3355 files belonging to 4 classes.
+Using 2684 files for training.
+Found 3355 files belonging to 4 classes.
+Using 671 files for validation.
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ rescaling (Rescaling)       (None, 256, 256, 3)       0
+
+ conv2d (Conv2D)             (None, 254, 254, 3)       84
+
+ conv2d_1 (Conv2D)           (None, 252, 252, 3)       84
+
+ conv2d_2 (Conv2D)           (None, 250, 250, 3)       84
+
+ conv2d_3 (Conv2D)           (None, 248, 248, 3)       84
+
+ conv2d_4 (Conv2D)           (None, 246, 246, 3)       84
+
+ flatten (Flatten)           (None, 181548)            0
+
+ dense (Dense)               (None, 256)               46476544
+
+ dense_1 (Dense)             (None, 4)                 1028
+
+=================================================================
+Total params: 46,477,992
+Trainable params: 46,477,992
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/10
+84/84 [==============================] - 230s 3s/step - loss: 1.2866 - accuracy: 0.4400 - val_loss: 1.2556 - val_accuracy: 0.4322
+Epoch 2/10
+84/84 [==============================] - 196s 2s/step - loss: 0.9887 - accuracy: 0.5510 - val_loss: 1.3775 - val_accuracy: 0.4039
+Epoch 3/10
+84/84 [==============================] - 195s 2s/step - loss: 0.3883 - accuracy: 0.8700 - val_loss: 1.8200 - val_accuracy: 0.3830
+Epoch 4/10
+84/84 [==============================] - 196s 2s/step - loss: 0.1120 - accuracy: 0.9717 - val_loss: 2.7940 - val_accuracy: 0.3651
+Epoch 5/10
+84/84 [==============================] - 196s 2s/step - loss: 0.0438 - accuracy: 0.9899 - val_loss: 2.5548 - val_accuracy: 0.3920
+Epoch 6/10
+84/84 [==============================] - 197s 2s/step - loss: 0.0212 - accuracy: 0.9959 - val_loss: 3.2547 - val_accuracy: 0.4277
+Epoch 7/10
+84/84 [==============================] - 210s 2s/step - loss: 0.0042 - accuracy: 0.9996 - val_loss: 3.6984 - val_accuracy: 0.4307
+Epoch 8/10
+84/84 [==============================] - 206s 2s/step - loss: 0.0021 - accuracy: 0.9993 - val_loss: 4.0017 - val_accuracy: 0.4426
+Epoch 9/10
+84/84 [==============================] - 206s 2s/step - loss: 0.0037 - accuracy: 0.9996 - val_loss: 4.0786 - val_accuracy: 0.4411
+Epoch 10/10
+84/84 [==============================] - 206s 2s/step - loss: 2.8099e-04 - accuracy: 1.0000 - val_loss: 4.1224 - val_accuracy: 0.4277
