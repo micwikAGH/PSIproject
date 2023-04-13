@@ -1,0 +1,85 @@
+c:\AGH\S6\PSI\Projekt>mc06.py
+Found 3355 files belonging to 4 classes.
+Using 2684 files for training.
+Found 3355 files belonging to 4 classes.
+Using 671 files for validation.
+C:\Users\micwik\AppData\Roaming\Python\Python311\site-packages\keras\optimizers\legacy\adam.py:117: UserWarning: The `lr` argument is deprecated, use `learning_rate` instead.
+  super().__init__(name, **kwargs)
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ conv2d (Conv2D)             (None, 125, 125, 16)      2368
+
+ conv2d_1 (Conv2D)           (None, 125, 125, 32)      4640
+
+ batch_normalization (BatchN  (None, 125, 125, 32)     128
+ ormalization)
+
+ conv2d_2 (Conv2D)           (None, 63, 63, 32)        9248
+
+ batch_normalization_1 (Batc  (None, 63, 63, 32)       128
+ hNormalization)
+
+ dropout (Dropout)           (None, 63, 63, 32)        0
+
+ conv2d_3 (Conv2D)           (None, 63, 63, 64)        18496
+
+ batch_normalization_2 (Batc  (None, 63, 63, 64)       256
+ hNormalization)
+
+ conv2d_4 (Conv2D)           (None, 32, 32, 64)        36928
+
+ batch_normalization_3 (Batc  (None, 32, 32, 64)       256
+ hNormalization)
+
+ dropout_1 (Dropout)         (None, 32, 32, 64)        0
+
+ conv2d_5 (Conv2D)           (None, 32, 32, 128)       73856
+
+ batch_normalization_4 (Batc  (None, 32, 32, 128)      512
+ hNormalization)
+
+ conv2d_6 (Conv2D)           (None, 16, 16, 128)       147584
+
+ batch_normalization_5 (Batc  (None, 16, 16, 128)      512
+ hNormalization)
+
+ dropout_2 (Dropout)         (None, 16, 16, 128)       0
+
+ flatten (Flatten)           (None, 32768)             0
+
+ dense (Dense)               (None, 512)               16777728
+
+ batch_normalization_6 (Batc  (None, 512)              2048
+ hNormalization)
+
+ dropout_3 (Dropout)         (None, 512)               0
+
+ dense_1 (Dense)             (None, 4)                 2052
+
+=================================================================
+Total params: 17,076,740
+Trainable params: 17,074,820
+Non-trainable params: 1,920
+_________________________________________________________________
+Epoch 1/10
+84/84 [==============================] - 167s 2s/step - loss: 2.6577 - accuracy: 0.3506 - val_loss: 2.1820 - val_accuracy: 0.3920
+Epoch 2/10
+84/84 [==============================] - 159s 2s/step - loss: 2.1868 - accuracy: 0.4430 - val_loss: 1.7675 - val_accuracy: 0.5067
+Epoch 3/10
+84/84 [==============================] - 160s 2s/step - loss: 1.8761 - accuracy: 0.5056 - val_loss: 1.9029 - val_accuracy: 0.4382
+Epoch 4/10
+84/84 [==============================] - 158s 2s/step - loss: 1.7619 - accuracy: 0.5406 - val_loss: 1.9694 - val_accuracy: 0.4128
+Epoch 5/10
+84/84 [==============================] - 161s 2s/step - loss: 1.5340 - accuracy: 0.5961 - val_loss: 1.8274 - val_accuracy: 0.5156
+Epoch 6/10
+84/84 [==============================] - 159s 2s/step - loss: 1.4619 - accuracy: 0.6166 - val_loss: 1.7853 - val_accuracy: 0.5484
+Epoch 7/10
+84/84 [==============================] - 159s 2s/step - loss: 1.3588 - accuracy: 0.6613 - val_loss: 1.8192 - val_accuracy: 0.5112
+Epoch 8/10
+84/84 [==============================] - 159s 2s/step - loss: 1.2763 - accuracy: 0.6956 - val_loss: 1.8016 - val_accuracy: 0.4993
+Epoch 9/10
+84/84 [==============================] - 159s 2s/step - loss: 1.1974 - accuracy: 0.7187 - val_loss: 1.7500 - val_accuracy: 0.5231
+Epoch 10/10
+84/84 [==============================] - 159s 2s/step - loss: 1.1379 - accuracy: 0.7429 - val_loss: 1.9858 - val_accuracy: 0.4441
