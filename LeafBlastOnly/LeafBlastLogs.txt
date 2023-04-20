@@ -1,0 +1,67 @@
+PS C:\Users\tomas\Desktop\Studia\Semestr 6\PSI\rice_images> & C:/Users/tomas/AppData/Local/Programs/Python/Python310/python.exe "c:/Users/tomas/Desktop/Studia/Semestr 6/PSI/rice_images/proj01.py"
+Found 2267 files belonging to 2 classes.
+Using 1814 files for training.
+Found 2267 files belonging to 2 classes.
+Using 453 files for validation.
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ rescaling (Rescaling)       (None, 256, 256, 3)       0
+
+ conv2d (Conv2D)             (None, 256, 256, 16)      448
+
+ max_pooling2d (MaxPooling2D  (None, 128, 128, 16)     0
+ )
+
+ conv2d_1 (Conv2D)           (None, 128, 128, 32)      4640
+
+ max_pooling2d_1 (MaxPooling  (None, 64, 64, 32)       0
+ 2D)
+
+ conv2d_2 (Conv2D)           (None, 64, 64, 64)        18496
+
+ max_pooling2d_2 (MaxPooling  (None, 32, 32, 64)       0
+ 2D)
+
+ conv2d_3 (Conv2D)           (None, 32, 32, 128)       73856
+
+ max_pooling2d_3 (MaxPooling  (None, 16, 16, 128)      0
+ 2D)
+
+ conv2d_4 (Conv2D)           (None, 16, 16, 256)       295168
+
+ max_pooling2d_4 (MaxPooling  (None, 8, 8, 256)        0
+ 2D)
+
+ flatten (Flatten)           (None, 16384)             0
+
+ dense (Dense)               (None, 512)               8389120
+
+ dense_1 (Dense)             (None, 2)                 1026
+
+=================================================================
+Total params: 8,782,754
+Trainable params: 8,782,754
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/10
+57/57 [==============================] - 59s 995ms/step - loss: 0.6865 - accuracy: 0.6389 - val_loss: 0.6552 - val_accuracy: 0.6623
+Epoch 2/10
+57/57 [==============================] - 59s 1s/step - loss: 0.6349 - accuracy: 0.6549 - val_loss: 0.6244 - val_accuracy: 0.6623
+Epoch 3/10
+57/57 [==============================] - 64s 1s/step - loss: 0.6300 - accuracy: 0.6549 - val_loss: 0.6080 - val_accuracy: 0.6623
+Epoch 4/10
+57/57 [==============================] - 59s 1s/step - loss: 0.6043 - accuracy: 0.6549 - val_loss: 0.5964 - val_accuracy: 0.6623
+Epoch 5/10
+57/57 [==============================] - 55s 964ms/step - loss: 0.5949 - accuracy: 0.6670 - val_loss: 0.6397 - val_accuracy: 0.6623
+Epoch 6/10
+57/57 [==============================] - 55s 960ms/step - loss: 0.5920 - accuracy: 0.6637 - val_loss: 0.6082 - val_accuracy: 0.6932
+Epoch 7/10
+57/57 [==============================] - 55s 965ms/step - loss: 0.5775 - accuracy: 0.6918 - val_loss: 0.6099 - val_accuracy: 0.6600
+Epoch 8/10
+57/57 [==============================] - 55s 966ms/step - loss: 0.5694 - accuracy: 0.7128 - val_loss: 0.6006 - val_accuracy: 0.6865
+Epoch 9/10
+57/57 [==============================] - 53s 938ms/step - loss: 0.5621 - accuracy: 0.7111 - val_loss: 0.6589 - val_accuracy: 0.6799
+Epoch 10/10
+57/57 [==============================] - 54s 955ms/step - loss: 0.5629 - accuracy: 0.7100 - val_loss: 0.6186 - val_accuracy: 0.6733
