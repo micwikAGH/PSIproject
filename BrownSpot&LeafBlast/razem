@@ -1,0 +1,87 @@
+c:\AGH\S6\PSI\Projekt>mc08.py
+Found 2790 files belonging to 2 classes.
+Using 2232 files for training.
+Found 2790 files belonging to 2 classes.
+Using 558 files for validation.
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ rescaling (Rescaling)       (None, 256, 256, 3)       0
+
+ conv2d (Conv2D)             (None, 256, 256, 16)      448
+
+ max_pooling2d (MaxPooling2D  (None, 128, 128, 16)     0
+ )
+
+ conv2d_1 (Conv2D)           (None, 128, 128, 32)      4640
+
+ max_pooling2d_1 (MaxPooling  (None, 64, 64, 32)       0
+ 2D)
+
+ conv2d_2 (Conv2D)           (None, 64, 64, 64)        18496
+
+ max_pooling2d_2 (MaxPooling  (None, 32, 32, 64)       0
+ 2D)
+
+ conv2d_3 (Conv2D)           (None, 32, 32, 128)       73856
+
+ max_pooling2d_3 (MaxPooling  (None, 16, 16, 128)      0
+ 2D)
+
+ conv2d_4 (Conv2D)           (None, 16, 16, 256)       295168
+
+ max_pooling2d_4 (MaxPooling  (None, 8, 8, 256)        0
+ 2D)
+
+ flatten (Flatten)           (None, 16384)             0
+
+ dense (Dense)               (None, 512)               8389120
+
+ dense_1 (Dense)             (None, 2)                 1026
+
+=================================================================
+Total params: 8,782,754
+Trainable params: 8,782,754
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/20
+70/70 [==============================] - 117s 2s/step - loss: 0.7003 - accuracy: 0.5278 - val_loss: 0.6900 - val_accuracy: 0.5376
+Epoch 2/20
+70/70 [==============================] - 113s 2s/step - loss: 0.6911 - accuracy: 0.5323 - val_loss: 0.6836 - val_accuracy: 0.5376
+Epoch 3/20
+70/70 [==============================] - 113s 2s/step - loss: 0.6750 - accuracy: 0.5681 - val_loss: 1.2667 - val_accuracy: 0.4570
+Epoch 4/20
+70/70 [==============================] - 113s 2s/step - loss: 0.6808 - accuracy: 0.5860 - val_loss: 0.6327 - val_accuracy: 0.6703
+Epoch 5/20
+70/70 [==============================] - 113s 2s/step - loss: 0.6201 - accuracy: 0.6711 - val_loss: 0.6342 - val_accuracy: 0.6165
+Epoch 6/20
+70/70 [==============================] - 113s 2s/step - loss: 0.6055 - accuracy: 0.6608 - val_loss: 0.6211 - val_accuracy: 0.6703
+Epoch 7/20
+70/70 [==============================] - 112s 2s/step - loss: 0.6000 - accuracy: 0.6797 - val_loss: 0.6179 - val_accuracy: 0.6774
+Epoch 8/20
+70/70 [==============================] - 112s 2s/step - loss: 0.5815 - accuracy: 0.7012 - val_loss: 0.6204 - val_accuracy: 0.6577
+Epoch 9/20
+70/70 [==============================] - 112s 2s/step - loss: 0.5812 - accuracy: 0.7003 - val_loss: 0.5993 - val_accuracy: 0.6774
+Epoch 10/20
+70/70 [==============================] - 112s 2s/step - loss: 0.5819 - accuracy: 0.7016 - val_loss: 0.6190 - val_accuracy: 0.6882
+Epoch 11/20
+70/70 [==============================] - 112s 2s/step - loss: 0.5567 - accuracy: 0.7213 - val_loss: 0.6064 - val_accuracy: 0.6756
+Epoch 12/20
+70/70 [==============================] - 112s 2s/step - loss: 0.5415 - accuracy: 0.7240 - val_loss: 0.5964 - val_accuracy: 0.6828
+Epoch 13/20
+70/70 [==============================] - 117s 2s/step - loss: 0.5390 - accuracy: 0.7312 - val_loss: 0.6145 - val_accuracy: 0.6953
+Epoch 14/20
+70/70 [==============================] - 116s 2s/step - loss: 0.5187 - accuracy: 0.7428 - val_loss: 0.5984 - val_accuracy: 0.6935
+Epoch 15/20
+70/70 [==============================] - 113s 2s/step - loss: 0.5015 - accuracy: 0.7460 - val_loss: 0.6555 - val_accuracy: 0.7133
+Epoch 16/20
+70/70 [==============================] - 112s 2s/step - loss: 0.4864 - accuracy: 0.7625 - val_loss: 0.6465 - val_accuracy: 0.6792
+Epoch 17/20
+70/70 [==============================] - 112s 2s/step - loss: 0.4720 - accuracy: 0.7728 - val_loss: 0.6020 - val_accuracy: 0.6882
+Epoch 18/20
+70/70 [==============================] - 112s 2s/step - loss: 0.4445 - accuracy: 0.7791 - val_loss: 0.6231 - val_accuracy: 0.6935
+Epoch 19/20
+70/70 [==============================] - 112s 2s/step - loss: 0.4352 - accuracy: 0.7903 - val_loss: 0.5864 - val_accuracy: 0.6918
+Epoch 20/20
+70/70 [==============================] - 112s 2s/step - loss: 0.3993 - accuracy: 0.8230 - val_loss: 0.6904 - val_accuracy: 0.7061
